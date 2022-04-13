@@ -1,4 +1,7 @@
-import { fetchFullCountyInfo } from '../apiCalls/apiCalls';
+import {
+  fetchFullCountyInfo,
+  makeCountryMapImageURL,
+} from '../apiCalls/apiCalls';
 
 const FETCH = 'capstone/country/FETCH_COUNTRY_INFO';
 
@@ -21,7 +24,19 @@ export const fetchInfo = (payload) => ({
 
 export const getAllInfoFromAPI = () => async (dispatch) => {
   await fetchFullCountyInfo().then((result) => {
-    dispatch(fetchInfo(result));
+    const countryInfo = [];
+    result.data.forEach((country) => {
+      countryInfo.push({
+        id: country.name.common,
+        name: country.name.common,
+        code: country.cca3,
+        continent: country.continents[0],
+        subRegions: country.subregion,
+        maps: makeCountryMapImageURL(country.cca3),
+        flag: country.flags.svg,
+      });
+      dispatch(fetchInfo(countryInfo));
+    });
   });
 };
 

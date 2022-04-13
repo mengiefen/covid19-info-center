@@ -2,11 +2,11 @@
 
 # The Covid-19 Info Center App
 
-The The Covid-19 Info Center App is a website built with React. In this application the user is ablet to see covid-19 data. The user can search by country and able to see utodate covid information.Therefore, the app has the followin features:
+The Covid-19 Info Center App is a website built with React. In this application, the user is able to see covid-19 data. The user can search by country and be able to see updated covid information. Therefore, the app has the following features:
 
-    - Categorizes the countries in continent for easy accessing.
-    - Access the list of contries data.
-    - Select a single country and access country's detail daily update.
+- Categorizes the countries in the continent for easy access.
+- Access the list of countries' data.
+- Select a single country and access the country's detailed daily update.
 
 ## Screenshot
 

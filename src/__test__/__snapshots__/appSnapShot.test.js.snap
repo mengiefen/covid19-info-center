@@ -1,0 +1,284 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Countrly List renders correctly when there are no items 1`] = `
+<section
+  className="sc-jSMfEi drbRiE"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="country-search"
+      id="country"
+      onChange={[Function]}
+      placeholder="Search by country"
+      type="text"
+    />
+    <button
+      className="btn-search"
+      type="button"
+    >
+      <svg
+        fill="none"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+        />
+      </svg>
+    </button>
+  </form>
+  <div
+    className="sc-iBkjds eWCXSa"
+  />
+</section>
+`;
+
+exports[`Home Page renders correctly when there are no items 1`] = `
+<section
+  className="sc-gsnTZi hjRMeY"
+>
+  <div
+    className="sc-dkzDqf gpYKFn"
+  >
+    <div
+      className="sc-hKMtZM inmPkC"
+      onClick={[Function]}
+    >
+      <h3
+        className="continent-name"
+      >
+        Africa
+      </h3>
+      <svg
+        className="open-icon"
+        fill="none"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+        />
+      </svg>
+    </div>
+    <div
+      className="sc-hKMtZM kwfDHD"
+      onClick={[Function]}
+    >
+      <h3
+        className="continent-name"
+      >
+        Asia
+      </h3>
+      <svg
+        className="open-icon"
+        fill="none"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+        />
+      </svg>
+    </div>
+    <div
+      className="sc-hKMtZM irncPF"
+      onClick={[Function]}
+    >
+      <h3
+        className="continent-name"
+      >
+        Australia
+      </h3>
+      <svg
+        className="open-icon"
+        fill="none"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+        />
+      </svg>
+    </div>
+    <div
+      className="sc-hKMtZM iaipOZ"
+      onClick={[Function]}
+    >
+      <h3
+        className="continent-name"
+      >
+        Europe
+      </h3>
+      <svg
+        className="open-icon"
+        fill="none"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+        />
+      </svg>
+    </div>
+    <div
+      className="sc-hKMtZM coMoYZ"
+      onClick={[Function]}
+    >
+      <h3
+        className="continent-name"
+      >
+        North America
+      </h3>
+      <svg
+        className="open-icon"
+        fill="none"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+        />
+      </svg>
+    </div>
+    <div
+      className="sc-hKMtZM hbZZXg"
+      onClick={[Function]}
+    >
+      <h3
+        className="continent-name"
+      >
+        South America
+      </h3>
+      <svg
+        className="open-icon"
+        fill="none"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+        />
+      </svg>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Nav Bar renders correctly when there are no items 1`] = `
+<header
+  className="sc-bczRLJ bfFjox"
+>
+  <h2
+    className="header-title"
+  />
+  <h2
+    className="logo"
+    onClickCapture={[Function]}
+  >
+    COVID
+    <span>
+      Info
+    </span>
+  </h2>
+</header>
+`;
+
+exports[`Sub Regions Page renders correctly when there are no items 1`] = `
+<section
+  className="sc-gsnTZi hjRMeY"
+>
+  SOME THING undefined
+</section>
+`;

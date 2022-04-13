@@ -90,7 +90,10 @@ const CountryList = () => {
           )
           .map(
             (countryData) => countryData.todayConfirmed && (
-              <RegionCard key={countryData.id}>
+              <RegionCard
+                key={countryData.id}
+                onClick={() => handleNavigation(countryData.name)}
+              >
                 <h3 className="country-name">{countryData.name}</h3>
                 <HiOutlineArrowCircleRight
                   onClick={() => handleNavigation(countryData.name)}

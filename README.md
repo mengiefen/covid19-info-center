@@ -79,7 +79,8 @@ To get a local copy up and running follow these simple example steps.
 
 ## Acknowledgments
 
-- To Microverse for giving me this wonderful opportunity
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+
 
 ## 📝 License
 

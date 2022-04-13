@@ -46,7 +46,7 @@ const selectCountryInfo = (data) => {
 
 const fetchFullCountyInfo = async () => {
   const countryInfo = await infoData.get('https://restcountries.com/v3.1/all');
-  return selectCountryInfo(countryInfo.data);
+  return countryInfo;
 };
 
 export {

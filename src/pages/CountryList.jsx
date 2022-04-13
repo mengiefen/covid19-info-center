@@ -38,7 +38,7 @@ const CountryList = () => {
     });
     setMerged(newMerged);
     setCountries(newMerged);
-  }, []);
+  }, [covidData, countryInfo]);
 
   useEffect(() => {
     if (covidData.length === 0 || countryInfo.length === 0) {

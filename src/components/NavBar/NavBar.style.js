@@ -16,6 +16,7 @@ const Nav = styled.header`
     letter-spacing: 2;
     text-transform: uppercase;
   }
+
   .logo span {
     color:  ${({ theme }) => theme.colors.text};
     font-weight: 800;
@@ -39,6 +40,8 @@ const Nav = styled.header`
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 1.2px;
+    max-width: 60%;
+    overflow: hidden;
   }
 
   .search-icon {

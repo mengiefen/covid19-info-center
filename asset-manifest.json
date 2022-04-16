@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/covid19-info-center/static/css/main.987d44db.css",
-    "main.js": "/covid19-info-center/static/js/main.76927b6b.js",
+    "main.js": "/covid19-info-center/static/js/main.9fef5c57.js",
     "static/media/australia.svg": "/covid19-info-center/static/media/australia.134c8b17c50f61c510b34a810a11d656.svg",
     "static/media/north_america.svg": "/covid19-info-center/static/media/north_america.7efb1c41c6680fb5e73dcf8fd8a96e7a.svg",
     "static/media/asia.svg": "/covid19-info-center/static/media/asia.8290fffbed36d39bb4efbbcfbc779e98.svg",
@@ -11,10 +11,10 @@
     "static/media/latin_america.svg": "/covid19-info-center/static/media/latin_america.0f23b9088f9c0946b153202890604932.svg",
     "index.html": "/covid19-info-center/index.html",
     "main.987d44db.css.map": "/covid19-info-center/static/css/main.987d44db.css.map",
-    "main.76927b6b.js.map": "/covid19-info-center/static/js/main.76927b6b.js.map"
+    "main.9fef5c57.js.map": "/covid19-info-center/static/js/main.9fef5c57.js.map"
   },
   "entrypoints": [
     "static/css/main.987d44db.css",
-    "static/js/main.76927b6b.js"
+    "static/js/main.9fef5c57.js"
   ]
 }

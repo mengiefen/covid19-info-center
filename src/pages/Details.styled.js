@@ -9,7 +9,7 @@ const Container = styled.section`
   background-size: cover;
 
   @media screen and (min-width: 768px) {
-   padding: 1rem 5%;
+    padding: 1rem 5%;
   }
 
   form {
@@ -39,6 +39,14 @@ const Container = styled.section`
     color: #1ff1f5;
   }
 
+  .country-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 1rem 1.5rem;
+    width: 100%;
+  }
+
   .country-map {
     position: absolute;
     bottom: 0;
@@ -51,8 +59,8 @@ const Container = styled.section`
   }
   .country-flag {
     position: absolute;
-    top: 4rem;
-    right: 1rem;
+    top: 5rem;
+    right: 1.5rem;
     z-index: 111;
     width: 50px;
     height: 50px;
@@ -66,6 +74,10 @@ const Container = styled.section`
       width: 100px;
       height: auto;
     }
+
+    @media screen and (min-width: 768px) {
+      right: 3rem;
+    }
   }
 
   h2 {
@@ -74,7 +86,7 @@ const Container = styled.section`
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 2;
-    padding-left: 2rem 1rem 2rem 1rem;
+    padding: 1rem;
   }
 `;
 
@@ -83,21 +95,12 @@ const RegionCard = styled.div`
   position: relative;
   width: 100%;
   height: auto;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
   background-color: ${({ theme }) => theme.colors.semiCyan};
   margin: 0.01rem 0;
   border: 2px solid transparent;
-  box-shadow: 2px 2px 10px ${({ theme }) => theme.colors.dark},
-    2px 2px 5px ${({ theme }) => theme.colors.dark};
-
-  .country-name {
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 0.4rem;
-    width: 100%;
-    background-color: ${({ theme }) => theme.colors.cyan};
-  }
+  box-shadow: 2px 2px 10px ${({ theme }) => theme.colors.semiDark},
+    2px 2px 5px ${({ theme }) => theme.colors.semiDark};
 
   .open-icon {
     font-size: 1.5rem;
@@ -125,7 +128,6 @@ const RegionCard = styled.div`
     }
 
     td {
-      background-color: ${({ theme }) => theme.colors.semiDark};
       padding: 0.5rem 1rem;
     }
   }
@@ -167,12 +169,12 @@ const RegionCard = styled.div`
     opacity: 0.8;
   }
 
-&:hover {
-  @media screen and (min-width: 768px) {
-   border: 2px solid darkcyan;
-   opacity: 0.95;
+  &:hover {
+    @media screen and (min-width: 768px) {
+      border: 2px solid darkcyan;
+      opacity: 0.95;
+    }
   }
-}
 `;
 
 const CardWrapper = styled.div`
@@ -183,7 +185,7 @@ const CardWrapper = styled.div`
 
   @media screen and (min-width: 768px) {
     padding: 1rem;
-    gap: 0.5rem;    
+    gap: 0.5rem;
   }
 `;
 

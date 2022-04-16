@@ -9,6 +9,36 @@ const Nav = styled.header`
   margin-bottom: 0.5rem;
   z-index: 10;
 
+  @media screen and (min-width: 768px) {
+    height: 7.5vh;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: ${({ theme }) => theme.colors.text};
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 0 0.5rem 0 0;
+    transition: all 0.5s ease;
+    margin-right: 0.5rem;
+
+    &:hover {
+      border: 1px solid #9ae5e6;
+      background-color: ${({ theme }) => theme.colors.dark};
+    }
+  }
+
+  .arrow-left {
+    display: ${(props) => (props.url === '' ? 'none' : 'block')};
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.2rem;
+    transition: all 0.5s;
+  }
+
   .logo {
     color: #fa9900;
     cursor: pointer;
@@ -27,29 +57,15 @@ const Nav = styled.header`
     color: ${({ theme }) => theme.colors.text};
   }
 
-  .arrow-left {
-    display: ${(props) => (props.url === '' ? 'none' : 'block')};
-    font-size: 2.5rem;
-    color: ${({ theme }) => theme.colors.text};
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0.2rem;
-    border-radius: 50%;
-    transition: all 0.5s;
-
-    &:hover {
-      border: 1px solid #9ae5e6;
-      background-color: ${({ theme }) => theme.colors.cyan};
-    }
-  }
-
   .header-title {
     color: ${({ theme }) => theme.colors.text};
     font-size: 1rem;
+    max-width: 60%;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    max-width: 60%;
+    max-width: 60%;    
     overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .search-icon {
@@ -67,8 +83,11 @@ const Nav = styled.header`
   }
 
   .settings-tab {
+    display: flex;
+    margin-left: 0.5rem;
     .btn-setting,
-    .btn-microphone {
+    .btn-microphone,
+    .btn-home {
       background-color: transparent;
       font-size: 2.5rem;
       color: ${({ theme }) => theme.colors.text};

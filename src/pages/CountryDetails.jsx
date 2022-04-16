@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { CardWrapper, Container, RegionCard } from './Details.styled';
+import { CardWrapper, Container, Table } from './Details.styled';
 import { getAllInfoFromAPI } from '../redux/country/countryInfoReducer';
 
 const CountryDetails = () => {
@@ -25,16 +25,18 @@ const CountryDetails = () => {
   return (
     <Container>
       <div className="country-flag">
-        <img src={countryDetail.flag} alt={`${countryDetail.name} flag`} />
+        <h2 className="country-name">{covidDetail.name}</h2>
+        <div>
+          <img src={countryDetail.flag} alt={`${countryDetail.name} flag`} />
+        </div>
       </div>
-      <h2 className="country-name">{covidDetail.name}</h2>
       <img
         src={countryDetail.maps}
         alt={countryDetail.name}
         className="country-map"
       />
       <CardWrapper>
-        <RegionCard>
+        <Table>
           <table className="country-detail">
             <tbody>
               <tr>
@@ -67,7 +69,7 @@ const CountryDetails = () => {
               </tr>
             </tbody>
           </table>
-        </RegionCard>
+        </Table>
       </CardWrapper>
     </Container>
   );

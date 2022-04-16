@@ -39,14 +39,6 @@ const Container = styled.section`
     color: #1ff1f5;
   }
 
-  .country-name {
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 1rem 1.5rem;
-    width: 100%;
-  }
-
   .country-map {
     position: absolute;
     bottom: 0;
@@ -57,32 +49,43 @@ const Container = styled.section`
     text-align: center;
     z-index: -1;
   }
-  .country-flag {
-    position: absolute;
-    top: 5rem;
-    right: 1.5rem;
-    z-index: 111;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    img {
+  .country-flag {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 1.5rem;
+    
+    div{
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      border-radius: 50%; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {    
       width: 100px;
       height: auto;
     }
 
+    .country-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 1rem 1.5rem;  
+  }
+
     @media screen and (min-width: 768px) {
-      right: 3rem;
+      right: 5rem;
     }
   }
 
   h2 {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 2;
@@ -112,23 +115,6 @@ const RegionCard = styled.div`
 
     &:hover {
       transform: scale(1.02);
-    }
-  }
-
-  .country-detail {
-    width: 100%;
-
-    tr {
-      text-align: left;
-    }
-
-    .head {
-      padding: 0.5rem;
-      font-weight: 600;
-    }
-
-    td {
-      padding: 0.5rem 1rem;
     }
   }
 
@@ -189,4 +175,50 @@ const CardWrapper = styled.div`
   }
 `;
 
-export { RegionCard, CardWrapper, Container };
+const Table = styled.div`
+  min-height: 80px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0.25rem 1rem;
+  background-color: ${({ theme }) => theme.colors.semiDark};
+  margin: 0.01rem 0;
+  border: 2px solid transparent;
+  box-shadow: 2px 2px 10px ${({ theme }) => theme.colors.semiDark},
+    2px 2px 5px ${({ theme }) => theme.colors.semiDark};
+
+  .open-icon {
+    font-size: 1.5rem;
+    color: #1ff1f5;
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  .country-detail {
+    width: 100%;
+
+    tr {
+      text-align: left;
+    }
+
+    .head {
+      padding: 0.5rem;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 0.5rem 1rem;
+      border: 1px solid ${({ theme }) => theme.colors.semiDark};
+    }
+  }
+`;
+
+export {
+  RegionCard, CardWrapper, Container, Table,
+};

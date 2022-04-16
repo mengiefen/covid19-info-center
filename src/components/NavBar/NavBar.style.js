@@ -27,30 +27,19 @@ const Nav = styled.header`
     color: ${({ theme }) => theme.colors.text};
   }
 
-  .navigation-tab {
-    display: ${(props) => (props.url === '' ? 'none' : 'flex')};
-    align-items: center;
-    transition: all 0.5s ease-in-out;
+  .arrow-left {
+    display: ${(props) => (props.url === '' ? 'none' : 'block')};
+    font-size: 2.5rem;
+    color: ${({ theme }) => theme.colors.text};
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0.2rem;
+    border-radius: 50%;
+    transition: all 0.5s;
 
-    .arrow-left {
-      font-size: 2.5rem;
-      color: ${({ theme }) => theme.colors.text};
-      background-color: transparent;
-      cursor: pointer;
-      padding: 0.2rem;
-      border-radius: 50%;
-      transition: all 0.5s;
-
-      &:hover {
-        border: 1px solid #9ae5e6;
-        background-color: ${({ theme }) => theme.colors.cyan};
-      }
-    }
-
-    h2 {
-      color: ${({ theme }) => theme.colors.text};
-      font-weight: 400;
-      font-size: 1.4rem;
+    &:hover {
+      border: 1px solid #9ae5e6;
+      background-color: ${({ theme }) => theme.colors.cyan};
     }
   }
 

@@ -17,9 +17,11 @@ const NavBar = () => {
   return (
     <Nav>
       {params.pathname !== '/' && (
-        <div className="navigation-tab" url={url[0]}>
-          <HiChevronLeft className="arrow-left" onClick={() => navigate(-1)} />
-        </div>
+        <HiChevronLeft
+          className="arrow-left"
+          url={url[0]}
+          onClick={() => navigate(-1)}
+        />
       )}
       <h2 className="header-title">{region}</h2>
       {url[0] === '' && (

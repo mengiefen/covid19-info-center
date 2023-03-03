@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/covid19-info-center/static/css/main.987d44db.css",
-    "main.js": "/covid19-info-center/static/js/main.8f5ec7c6.js",
-    "static/media/australia.svg": "/covid19-info-center/static/media/australia.134c8b17c50f61c510b34a810a11d656.svg",
-    "static/media/north_america.svg": "/covid19-info-center/static/media/north_america.7efb1c41c6680fb5e73dcf8fd8a96e7a.svg",
-    "static/media/asia.svg": "/covid19-info-center/static/media/asia.8290fffbed36d39bb4efbbcfbc779e98.svg",
-    "static/media/europe.svg": "/covid19-info-center/static/media/europe.2fb876108de4ce97f989377710544299.svg",
-    "static/media/asia2.svg": "/covid19-info-center/static/media/asia2.3e323fb57b222dbdce52cac6b8ec9e05.svg",
-    "static/media/africa1.svg": "/covid19-info-center/static/media/africa1.6169c3a6be77a86aa57933473ecaa0fa.svg",
-    "static/media/latin_america.svg": "/covid19-info-center/static/media/latin_america.0f23b9088f9c0946b153202890604932.svg",
-    "index.html": "/covid19-info-center/index.html",
-    "main.987d44db.css.map": "/covid19-info-center/static/css/main.987d44db.css.map",
-    "main.8f5ec7c6.js.map": "/covid19-info-center/static/js/main.8f5ec7c6.js.map"
+    "main.css": "/static/css/main.72d9d691.css",
+    "main.js": "/static/js/main.cb3a8bb4.js",
+    "static/media/australia.svg": "/static/media/australia.134c8b17c50f61c510b34a810a11d656.svg",
+    "static/media/north_america.svg": "/static/media/north_america.7efb1c41c6680fb5e73dcf8fd8a96e7a.svg",
+    "static/media/asia.svg": "/static/media/asia.8290fffbed36d39bb4efbbcfbc779e98.svg",
+    "static/media/europe.svg": "/static/media/europe.2fb876108de4ce97f989377710544299.svg",
+    "static/media/asia2.svg": "/static/media/asia2.3e323fb57b222dbdce52cac6b8ec9e05.svg",
+    "static/media/africa1.svg": "/static/media/africa1.6169c3a6be77a86aa57933473ecaa0fa.svg",
+    "static/media/latin_america.svg": "/static/media/latin_america.0f23b9088f9c0946b153202890604932.svg",
+    "index.html": "/index.html",
+    "main.72d9d691.css.map": "/static/css/main.72d9d691.css.map",
+    "main.cb3a8bb4.js.map": "/static/js/main.cb3a8bb4.js.map"
   },
   "entrypoints": [
-    "static/css/main.987d44db.css",
-    "static/js/main.8f5ec7c6.js"
+    "static/css/main.72d9d691.css",
+    "static/js/main.cb3a8bb4.js"
   ]
 }

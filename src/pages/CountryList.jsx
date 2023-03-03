@@ -11,7 +11,6 @@ import NORTH_AMERICA from '../assets/images/continents/north_america.svg';
 import SOUTH_AMERICA from '../assets/images/continents/latin_america.svg';
 import AUSTRALIA from '../assets/images/continents/australia.svg';
 import ASIA from '../assets/images/continents/asia2.svg';
-import { getCovidDataFromAPI } from '../redux/country/covidDataReducer';
 import { getAllInfoFromAPI } from '../redux/country/countryInfoReducer';
 import covidData from '../redux/apiCalls/data';
 
@@ -28,6 +27,7 @@ const CountryList = () => {
   });
 
   const countryInfo = useSelector((state) => state.countryInfo);
+  
   const [countries, setCountries] = useState([]);
   const [merged, setMerged] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');

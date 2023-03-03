@@ -24,6 +24,7 @@ const covidDataURL = `https://api.covid19tracking.narrativa.com/api?date_from=${
 
 const fetchCovidData = async () => {
   const response = await axios.get(covidDataURL);
+
   return response.data.dates[date].countries;
 };
 
@@ -46,6 +47,7 @@ const selectCountryInfo = (data) => {
 
 const fetchFullCountyInfo = async () => {
   const countryInfo = await infoData.get('https://restcountries.com/v3.1/all');
+
   return countryInfo;
 };
 

@@ -10,15 +10,17 @@ body {
   font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image:
-    linear-gradient(
-      to bottom right,
-      #1c3334,
-      #004d7a,
-      #008793,
-      #376e6f,
-      #2f4454
-    );
+  background-image: linear-gradient(
+    to bottom right,
+    #1c3334,
+    #004d7a,
+    #008793,
+    #376e6f,
+    #2f4454
+  );
+
+  width: 100vw;
+  height: 100vh;
 }
 
 .root {

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useEffect, useState } from 'react';
 import { HiOutlineArrowCircleRight, HiOutlineSearch } from 'react-icons/hi';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -11,12 +13,20 @@ import AUSTRALIA from '../assets/images/continents/australia.svg';
 import ASIA from '../assets/images/continents/asia2.svg';
 import { getCovidDataFromAPI } from '../redux/country/covidDataReducer';
 import { getAllInfoFromAPI } from '../redux/country/countryInfoReducer';
+import covidData from '../redux/apiCalls/data';
 
 const CountryList = () => {
   const params = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const covidData = useSelector((state) => state.covidData);
+  // const covidData = useSelector((state) => state.covidData);
+  const COVID_DATA = covidData.map((country, index) => {
+    return {
+      id: index,
+      ...country,
+    };
+  });
+
   const countryInfo = useSelector((state) => state.countryInfo);
   const [countries, setCountries] = useState([]);
   const [merged, setMerged] = useState([]);
@@ -33,7 +43,7 @@ const CountryList = () => {
 
   useEffect(() => {
     const newMerged = countryInfo.map((info) => {
-      const value = covidData.find((country) => country.name === info.name);
+      const value = COVID_DATA.find((country) => country.country === info.name);
       return { ...info, ...value };
     });
     setMerged(newMerged);
@@ -41,8 +51,8 @@ const CountryList = () => {
   }, [covidData, countryInfo]);
 
   useEffect(() => {
-    if (covidData.length === 0 || countryInfo.length === 0) {
-      dispatch(getCovidDataFromAPI());
+    if (COVID_DATA.length === 0 || countryInfo.length === 0) {
+      // dispatch(getCovidDataFromAPI());
       dispatch(getAllInfoFromAPI());
     }
   }, []);
@@ -83,41 +93,43 @@ const CountryList = () => {
       <CardWrapper>
         {countries
           .filter(
-            (country) => country.continent
-            && country.continent
-              .toLowerCase()
-              .includes(params.continent.toLowerCase()),
+            (country) =>
+              country.continent &&
+              country.continent
+                .toLowerCase()
+                .includes(params.continent.toLowerCase()),
           )
           .map(
-            (countryData) => countryData.todayConfirmed && (
-              <RegionCard
-                key={countryData.id}
-                onClick={() => handleNavigation(countryData.name)}
-              >
-                <h3 className="country-name">{countryData.name}</h3>
-                <HiOutlineArrowCircleRight
+            (countryData) =>
+              countryData.todayConfirmed && (
+                <RegionCard
+                  key={countryData.id}
                   onClick={() => handleNavigation(countryData.name)}
-                  className="open-icon"
-                />
-                <div className="summary">
-                  <div className="col-1">
-                    <h3>Active</h3>
-                    <h4>{`Total: ${countryData.todayConfirmed}`}</h4>
-                    <h4>{`Last 24: ${countryData.todayNewConfirmed}`}</h4>
+                >
+                  <h3 className="country-name">{countryData.name}</h3>
+                  <HiOutlineArrowCircleRight
+                    onClick={() => handleNavigation(countryData.name)}
+                    className="open-icon"
+                  />
+                  <div className="summary">
+                    <div className="col-1">
+                      <h3>Active</h3>
+                      <h4>{`Total: ${countryData.todayConfirmed}`}</h4>
+                      <h4>{`Last 24: ${countryData.todayNewConfirmed}`}</h4>
+                    </div>
+                    <div className="col-2">
+                      <h3>Deaths</h3>
+                      <h4>{`Total: ${countryData.todayDeaths}`}</h4>
+                      <h4>{`Last 24: ${countryData.todayNewDeaths}`}</h4>
+                    </div>
+                    <div className="col-3">
+                      <h3>Recovered</h3>
+                      <h4>{`Total: ${countryData.todayRecovered}`}</h4>
+                      <h4>{`Last 24: ${countryData.todayRecovered}`}</h4>
+                    </div>
                   </div>
-                  <div className="col-2">
-                    <h3>Deaths</h3>
-                    <h4>{`Total: ${countryData.todayDeaths}`}</h4>
-                    <h4>{`Last 24: ${countryData.todayNewDeaths}`}</h4>
-                  </div>
-                  <div className="col-3">
-                    <h3>Recovered</h3>
-                    <h4>{`Total: ${countryData.todayRecovered}`}</h4>
-                    <h4>{`Last 24: ${countryData.todayRecovered}`}</h4>
-                  </div>
-                </div>
-              </RegionCard>
-            ),
+                </RegionCard>
+              ),
           )}
       </CardWrapper>
     </Container>

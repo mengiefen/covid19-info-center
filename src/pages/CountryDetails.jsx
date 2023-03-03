@@ -3,12 +3,13 @@ import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { CardWrapper, Container, Table } from './Details.styled';
 import { getAllInfoFromAPI } from '../redux/country/countryInfoReducer';
+import covidData from '../redux/apiCalls/data';
 
 const CountryDetails = () => {
   const params = useParams();
   const dispatch = useDispatch();
   const countryInfo = useSelector((state) => state.countryInfo);
-  const covidData = useSelector((state) => state.covidData);
+  // const covidData = useSelector((state) => state.covidData);
 
   useEffect(() => {
     if (countryInfo.length === 0) {
@@ -20,19 +21,19 @@ const CountryDetails = () => {
     (country) => country.name === params.country,
   );
 
-  const covidDetail = covidData.find((data) => data.name === params.country);
+  const covidDetail = covidData.find((data) => data.country === params.country);
 
   return (
     <Container>
       <div className="country-flag">
-        <h2 className="country-name">{covidDetail.name}</h2>
+        <h2 className="country-name">{covidDetail.country}</h2>
         <div>
-          <img src={countryDetail.flag} alt={`${countryDetail.name} flag`} />
+          <img src={countryDetail.flag} alt={`${countryDetail.country} flag`} />
         </div>
       </div>
       <img
         src={countryDetail.maps}
-        alt={countryDetail.name}
+        alt={countryDetail.country}
         className="country-map"
       />
       <CardWrapper>

@@ -49,7 +49,7 @@ const Card = styled.div`
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.25s ease-in-out;
 
     &:hover {
       transform: scale(1.02);
@@ -68,8 +68,9 @@ const Card = styled.div`
     
     &:hover {
       opacity: 0.8;
-      border:2px solid #ccc;
-      transform: scale(1.1);
+      /* border:2px solid #ccc; */
+      transform: scale(1.05);
+      cursor: pointer;
     }
   }
 `;
@@ -84,8 +85,10 @@ const Button = styled.button`
   outline: none;
   border: none;
   transition: all 0.35s;
+  
   &:hover {
     transform: scale(0.98);
+    cursor: pointer;
   }
 `;
 

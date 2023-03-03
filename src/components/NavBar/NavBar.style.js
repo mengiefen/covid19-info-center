@@ -28,6 +28,7 @@ const Nav = styled.header`
     &:hover {
       border: 1px solid #9ae5e6;
       background-color: ${({ theme }) => theme.colors.dark};
+      cursor: pointer;
     }
   }
 

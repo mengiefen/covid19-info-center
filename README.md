@@ -15,7 +15,7 @@ The Covid-19 Info Center App is a website built with React. In this application,
 
 ## Deployement
 
-  [Live Demo](https://mengiefen.github.io/covid19-info-center)
+  [Live Demo](https://covid-info-center.netlify.app/)
 
 ## Built with
 

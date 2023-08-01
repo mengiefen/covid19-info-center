@@ -1,4 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet) ![](https://img.shields.io/badge/MENGSTU-FENTAW-success) [![](https://img.shields.io/badge/LIVE-DEMO-blue)](https://covid-info-center.netlify.app/)
+![](https://img.shields.io/badge/Microverse-blueviolet) ![](https://img.shields.io/badge/MENGSTU-FENTAW-success) 
+
+<!--[![](https://img.shields.io/badge/LIVE-DEMO-blue)](https://covid-info-center.netlify.app/) -->
 
 # The Covid-19 Info Center App
 
